@@ -1,6 +1,14 @@
 # Käynnistys
 
-Päivän aluksi avaa VS Coden terminaali Terminal --> New terminal ja suorita `npm run install` asentaakseksi ja päivittääksesi kirjastot.
+Jos aloitat uuden asian työstämisen, valitse Github desktopista `main`-haara ja paina `fetch origin` sekä tarvittaessa `pull origin`. Tällöin muiden tekemät mahdolliset muutokset ladataan sulle.
+
+Aluksi avaa VS Coden terminaali Terminal --> New terminal ja suorita `npm run install` asentaakseksi ja päivittääksesi kirjastot. Tämä on hyvä tehdä päivän alussa tai aina jos joku lisää projektiin uuden kirjaston.
+
+Käynnistä palvelin komennolla `npm run start`. Muutokset näkyvät tällöin livenä. Jos selain ei aukea automaattisesti, etusivulle pääsee osoitteesta [http://localhost:3000](http://localhost:3000).
+
+# TailwindCSS
+
+Projektissa käytetään [TailwindCSS](https://tailwindcss.com/):ää.
 
 # Getting Started with Create React App
 
