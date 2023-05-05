@@ -1,3 +1,7 @@
+# Käynnistys
+
+Päivän aluksi avaa VS Coden terminaali Terminal --> New terminal ja suorita `npm run install` asentaakseksi ja päivittääksesi kirjastot.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
