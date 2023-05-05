@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/header";
 
-const Chat = () => {
+const Blog = () => {
 	return (
 		<>
 			<Header />
-			<p>Chat sivu!</p>;
+			<p>Blogi sivu!</p>
 		</>
 	);
 };
 
-export default Chat;
+export default Blog;
