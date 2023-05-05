@@ -5,7 +5,7 @@ const Chat = () => {
 	return (
 		<>
 			<Header />
-			<p>Chat sivu!</p>;
+			<p>Chat sivu!</p>
 		</>
 	);
 };
