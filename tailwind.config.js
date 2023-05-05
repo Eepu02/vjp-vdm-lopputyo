@@ -6,6 +6,7 @@ module.exports = {
 		colors: {
 			"sad-purple": "#7E6E8A",
 			"happy-yellow": "#FCEA2B",
+			"dragon-purple": "#37184F",
 		},
 	},
 	plugins: [],
