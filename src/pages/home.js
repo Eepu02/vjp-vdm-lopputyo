@@ -7,7 +7,7 @@ const Home = () => {
 		<>
 			<Header />
 			<Link to="/chat">
-				<p className="text-base lg:text-2xl">Moi!</p>;
+				<p className="text-base lg:text-2xl bg-purple-700">Moi!</p>;
 			</Link>
 		</>
 	);
