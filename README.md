@@ -10,6 +10,12 @@ Käynnistä palvelin komennolla `npm run start`. Muutokset näkyvät tällöin l
 
 Projektissa käytetään [TailwindCSS](https://tailwindcss.com/):ää.
 
+# Deploying
+
+Suorita `npm run build`, jolloin projektin `src`-kansio pakataan ja optimoidaan selaimella avattavaan muotoon. Sivustoa voi tarkastella avaamalla `index.html` `build`-kansiosta. `build`-kansion sisällön voi viedä staattisen sisällön hostauspalveluun.
+
+Vaihtoehtoisesti projektin voi ajaa Nodella komennolla `node server/server.js`. Ennen tätä tulee ajaa `npm run build`.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
