@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ChatBubble from "./ChatBubble.jsx";
 
 const ChatWindow = () => {
@@ -6,7 +6,13 @@ const ChatWindow = () => {
     // But we have no need for that and besides, it would
     // increase complexity quite a bit
     const [messages, setMessages] = useState([]);
+    const [enteredText, setEnteredText] = useState("");
     const [loading, setLoading] = useState(false); // Disable input during fetching
+    const inputReference = useRef(null);
+
+    useEffect(() => {
+        inputReference.current.focus();
+    });
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,17 +39,16 @@ const ChatWindow = () => {
 
     const addMessage = async (e) => {
         e.preventDefault();
+        if (enteredText.length === 0) return;
         setLoading(true);
-        const form = e.target;
-        const formData = new FormData(form);
-        const message = formData.get("content");
         setMessages([
             ...messages,
             {
                 role: "user",
-                content: message,
+                content: enteredText,
             },
         ]);
+        setEnteredText("");
     };
 
     // const [data, setData] = React.useState(null);
@@ -55,8 +60,8 @@ const ChatWindow = () => {
     // }, []);
 
     return (
-        <div className="flex-col w-96 p-8">
-            <div>
+        <div className="relative flex flex-col w-96 p-8 h-[calc(100vh-32px)]">
+            <div className="overflow-y-scroll h-full px-4">
                 {messages.map((message, i) => (
                     <ChatBubble
                         key={i}
@@ -65,13 +70,18 @@ const ChatWindow = () => {
                     />
                 ))}
             </div>
-            <form onSubmit={addMessage}>
+            <form onSubmit={addMessage} className="grid grid-rows">
                 <label htmlFor="writemessage">Kirjoita viesti</label>
                 <input
                     type="text"
                     name="content"
                     id="writemessage"
                     disabled={loading}
+                    autoFocus
+                    value={enteredText}
+                    onChange={(e) => setEnteredText(e.target.value)}
+                    ref={inputReference}
+                    className="form-input"
                 />
                 <input
                     type="submit"
