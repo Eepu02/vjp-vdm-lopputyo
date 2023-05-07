@@ -1,6 +1,5 @@
-import handle from "./utils/openai.js";
+import getResponse from "./utils/openai.js";
 
-// import * as express from "express";
 import express from "express";
 import * as path from "path";
 import { config } from "dotenv";
@@ -12,15 +11,15 @@ const app = express();
 app.use(express.static(path.join(process.cwd(), "build")));
 app.use(express.json());
 
-console.log(process.cwd());
-
 app.get("/api", (req, res) => {
-    res.json({ message: "Data from server using GET!" });
+    console.log("got a simple get request");
+    res.status(200).json({ message: "OLD Data from server using GET!" });
 });
 
-app.post("/api", (req, res) => {
+app.post("/api", async (req, res) => {
     console.log("got request: " + JSON.stringify(req.body));
-    res.json(handle());
+    // handle(req.body).then((data) => res.json(data));
+    res.json(await getResponse(req.body));
 });
 
 app.get("/", (req, res) => {
@@ -31,6 +30,6 @@ app.get("/*", (req, res) => {
     res.sendFile(path.join(process.cwd(), "build", "index.html"));
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Ready on port ${process.env.PORT}!`);
+app.listen(process.env.SERVER_PORT, () => {
+    console.log(`Ready on port ${process.env.SERVER_PORT}!`);
 });
