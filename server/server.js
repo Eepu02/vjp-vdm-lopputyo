@@ -6,19 +6,18 @@ import { config } from "dotenv";
 
 config();
 
+const PORT = process.env.SERVER_PORT || 9000;
 const app = express();
 
 app.use(express.static(path.join(process.cwd(), "build")));
 app.use(express.json());
 
+// GET /api for health check
 app.get("/api", (req, res) => {
-    console.log("got a simple get request");
-    res.status(200).json({ message: "OLD Data from server using GET!" });
+    res.sendStatus(200);
 });
 
 app.post("/api", async (req, res) => {
-    console.log("got request: " + JSON.stringify(req.body));
-    // handle(req.body).then((data) => res.json(data));
     res.json(await getResponse(req.body));
 });
 
@@ -30,6 +29,6 @@ app.get("/*", (req, res) => {
     res.sendFile(path.join(process.cwd(), "build", "index.html"));
 });
 
-app.listen(process.env.SERVER_PORT, () => {
-    console.log(`Ready on port ${process.env.SERVER_PORT}!`);
+app.listen(PORT, () => {
+    console.log(`Ready on port ${PORT}!`);
 });

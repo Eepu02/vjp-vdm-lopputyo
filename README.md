@@ -1,4 +1,4 @@
-# Käynnistys
+# Devaus
 
 Jos aloitat uuden asian työstämisen, valitse Github desktopista `main`-haara ja paina `fetch origin` sekä tarvittaessa `pull origin`. Tällöin muiden tekemät mahdolliset muutokset ladataan sulle.
 
@@ -12,9 +12,13 @@ Projektissa käytetään [TailwindCSS](https://tailwindcss.com/):ää.
 
 # Deploying
 
-Suorita `npm run build`, jolloin projektin `src`-kansio pakataan ja optimoidaan selaimella avattavaan muotoon. Sivustoa voi tarkastella avaamalla `index.html` `build`-kansiosta. `build`-kansion sisällön voi viedä staattisen sisällön hostauspalveluun.
+Suorita `npm run build`, jolloin projektin `src`-kansio pakataan ja optimoidaan selaimella avattavaan muotoon. Sivustoa voi tarkastella avaamalla `index.html` `build`-kansiosta. `build`-kansion sisällön voi viedä staattisen sisällön hostauspalveluun. Huomioi, että jotkin sivuston ominaisuudet eivät toimi staattisella sivustolla.
 
 Vaihtoehtoisesti projektin voi ajaa Nodella komennolla `node server/server.js`. Ennen tätä tulee ajaa `npm run build`.
+
+# Käynnistys
+
+Suorita projektin juurihakemistossa komennot `npm install` ja `npm run build`. Tämän jälkeen käynnistä palvelin komennolla `npm run dev`.
 
 # Getting Started with Create React App
 
