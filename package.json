@@ -2,7 +2,7 @@
     "name": "vjp-vdm-lopputyo",
     "version": "0.1.0",
     "private": true,
-    "proxy": "http://127.0.0.1:9000",
+    "proxy": "http://localhost:9000",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
@@ -10,7 +10,6 @@
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
         "openai": "^3.2.1",
-        "path": "^0.12.7",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.11.1",
@@ -43,7 +42,6 @@
         ]
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.5.3",
         "nodemon": "^2.0.22",
         "prettier": "^2.8.8",
         "prettier-plugin-tailwindcss": "^0.2.8",

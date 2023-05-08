@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import ChatBubble from "./ChatBubble.jsx";
+import ChatBubble from "./ChatBubble";
 
 const ChatWindow = () => {
     // Ideally, the messages would be saved in a database.
@@ -17,19 +17,24 @@ const ChatWindow = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("/api", {
-                method: "POST",
-                headers: {
-                    Accept: "application/json",
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(messages),
-            });
-            const result = await response.json();
-            if (result && result.status === "ok") {
-                setMessages([...messages, result.message]);
+            try {
+                const response = await fetch("/api", {
+                    method: "POST",
+                    headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(messages),
+                });
+                const result = await response.json();
+                if (result && result.status === "ok") {
+                    setMessages([...messages, result.message]);
+                }
+            } catch (e) {
+                console.log(e);
+            } finally {
+                setLoading(false);
             }
-            setLoading(false);
         };
 
         // Do not run if the latest message is from the server
@@ -93,7 +98,7 @@ const ChatWindow = () => {
                     value={enteredText}
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
-                    className="input-form"
+                    className="border border-0 bg-candyfloss-purple p-2 focus:outline-none"
                 />
                 <input
                     type="submit"

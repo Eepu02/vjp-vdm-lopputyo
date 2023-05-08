@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/header.js";
+import Header from "../components/header";
 import Man from "../assets/photos/man.png";
 
 const Home = () => {
@@ -8,14 +8,14 @@ const Home = () => {
         <>
             <Header />
             <Link to="/chat">
-                <p className="text-base lg:text-2xl text-sad-purple">Moi!</p>;
+                <p className="text-base text-sad-purple lg:text-2xl">Moi!</p>;
             </Link>
-            <div className="flex justify-between w-full">
+            <div className="flex w-full justify-between">
                 <div className="flex-col pl-24">
-                    <h1 className="text-6xl w-30 pt-24">
+                    <h1 className="w-30 pt-24 text-6xl">
                         Tunteet ovat sokeita sukupuolelle
                     </h1>
-                    <div className="text-3xl w-30 pt-20">
+                    <div className="w-30 pt-20 text-3xl">
                         lorem lipsum blaa blaa blaa lorem lipum lorem lipsum
                         blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa
                         lorem lipum lorem lipsum blaa blaa blaa lorem lipum
