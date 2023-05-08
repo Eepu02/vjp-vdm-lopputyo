@@ -1,4 +1,4 @@
-import getResponse from "./utils/openai.js";
+import getResponse from "./utils/LLMService.mjs";
 
 import express from "express";
 import * as path from "path";

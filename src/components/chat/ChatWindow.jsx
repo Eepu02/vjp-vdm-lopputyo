@@ -9,6 +9,7 @@ const ChatWindow = () => {
     const [enteredText, setEnteredText] = useState("");
     const [loading, setLoading] = useState(false); // Disable input during fetching
     const inputReference = useRef(null);
+    const container = useRef(null);
 
     useEffect(() => {
         inputReference.current.focus();
@@ -37,6 +38,17 @@ const ChatWindow = () => {
         if (latestMessage && latestMessage.role === "user") fetchData();
     }, [messages]);
 
+    const Scroll = () => {
+        const { offsetHeight, scrollHeight, scrollTop } = container.current;
+        if (scrollHeight <= scrollTop + offsetHeight + 100) {
+            container.current?.scrollTo(0, scrollHeight);
+        }
+    };
+
+    useEffect(() => {
+        Scroll();
+    }, [messages]);
+
     const addMessage = async (e) => {
         e.preventDefault();
         if (enteredText.length === 0) return;
@@ -60,8 +72,8 @@ const ChatWindow = () => {
     // }, []);
 
     return (
-        <div className="relative flex flex-col w-96 p-8 h-[calc(100vh-32px)]">
-            <div className="overflow-y-scroll h-full px-4">
+        <div className="relative flex h-[calc(100vh-32px)] w-96 flex-col p-8">
+            <div ref={container} className="h-full overflow-y-scroll px-4">
                 {messages.map((message, i) => (
                     <ChatBubble
                         key={i}
@@ -70,7 +82,7 @@ const ChatWindow = () => {
                     />
                 ))}
             </div>
-            <form onSubmit={addMessage} className="grid grid-rows">
+            <form onSubmit={addMessage} className="grid-rows grid">
                 <label htmlFor="writemessage">Kirjoita viesti</label>
                 <input
                     type="text"
@@ -81,7 +93,6 @@ const ChatWindow = () => {
                     value={enteredText}
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
-                    className="form-input"
                 />
                 <input
                     type="submit"

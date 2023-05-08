@@ -10,6 +10,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const getResponse = async (messages) => {
+    // Some limitations so we don't go bankrupt during development
     if (
         process.env.NODE_ENV === "production" &&
         process.env.OPENAI_API_KEY !== undefined
@@ -37,14 +38,26 @@ const getResponse = async (messages) => {
             };
         }
     } else {
-        return {
-            status: "ok",
-            message: {
-                role: "assistant",
-                content:
-                    "Hello from Server! Please set NODE_ENV to production and/or provide an API key!",
-            },
-        };
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({
+                    status: "ok",
+                    message: {
+                        role: "assistant",
+                        content:
+                            "Hello from Server! Please set NODE_ENV to production and/or provide an API key!",
+                    },
+                });
+            }, 1000);
+        });
+        // return {
+        //     status: "ok",
+        //     message: {
+        //         role: "assistant",
+        //         content:
+        //             "Hello from Server! Please set NODE_ENV to production and/or provide an API key!",
+        //     },
+        // };
     }
 };
 
