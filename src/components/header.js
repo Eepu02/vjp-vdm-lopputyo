@@ -13,6 +13,9 @@ const Header = () => {
 		      <p className="text-base lg:text-2xl bg-purple-700"></p>Blogi</Link>
 			</div>
 		</nav>
+			  <div className="flex justify-evenly p-5">
+			    <p className="text-dragon-purple text-base lg:text-2xl">Kotisivulle!</p></Link>
+			    <Link to="/chat">
 
 	); 
 };
