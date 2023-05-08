@@ -93,6 +93,7 @@ const ChatWindow = () => {
                     value={enteredText}
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
+                    className="input-form"
                 />
                 <input
                     type="submit"
