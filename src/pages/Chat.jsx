@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "../components/header";
-import ChatWindow from "../components/chat/ChatWindow";
+import Layout from "../components/layouts/layout";
+import ChatWindow from "../components/chat/chatWindow";
 
 const Chat = () => {
     return (
-        <>
-            <Header />
+        <Layout>
             <ChatWindow />
-        </>
+        </Layout>
     );
 };
 
