@@ -6,8 +6,6 @@ import Home from "./pages/home";
 import Chat from "./pages/chat";
 import Blog from "./pages/blog";
 
-console.log(process.env.REACT_APP_OPENAI_API_KEY);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
