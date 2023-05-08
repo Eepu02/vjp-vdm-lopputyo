@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
+
+=======
 import { Link } from "react-router-dom";
+>>>>>>> bc618da33edaee58e847ffc11179a55c97f7453b
 
 const Footer = () => {
 	return (
