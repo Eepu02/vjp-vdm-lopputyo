@@ -31,7 +31,7 @@ const Home = () => {
                     </p>
                 </Link>
             </button>
-            <button className="ml-12 mt-10 transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600">
+            <button className="ml-12 mt-10 transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-opacity-75">
                 <Link to="/blog">
                     <p className="text-base text-dragon-purple lg:text-2xl">
                         Lue lisää!
