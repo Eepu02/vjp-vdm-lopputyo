@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Chat from "./pages/Chat";
+import Chat from "./pages/chat";
 import Blog from "./pages/blog";
 
 console.log(process.env.REACT_APP_OPENAI_API_KEY);

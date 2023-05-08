@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/layouts/layout";
 import Man from "../assets/photos/man.png";
 
 const Home = () => {
     return (
-        <>
-            <Header />
-
+        <Layout>
+            {" "}
             <div className="flex w-full justify-between">
                 <div className="flex-col pl-24">
                     <h1 className="w-30 pt-24 text-6xl">
@@ -38,8 +36,7 @@ const Home = () => {
                     </p>
                 </Link>
             </button>
-            <Footer />
-        </>
+        </Layout>
     );
 };
 

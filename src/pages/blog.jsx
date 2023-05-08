@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/layouts/layout";
 
 const Blog = () => {
     return (
-        <>
-            <Header />
+        <Layout>
             <body>
                 <p>Blogi sivu!</p>
                 <div className="m-12 grid grid-cols-3 gap-8">
@@ -30,9 +28,7 @@ const Blog = () => {
                     </div>
                 </div>
             </body>
-
-            <Footer />
-        </>
+        </Layout>
     );
 };
 

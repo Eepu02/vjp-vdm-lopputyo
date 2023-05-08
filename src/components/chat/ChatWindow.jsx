@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import ChatBubble from "./ChatBubble";
+import ChatBubble from "./chatBubble";
 
 const ChatWindow = () => {
     // Ideally, the messages would be saved in a database.
