@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../components/header";
+import ChatWindow from "../components/chat/ChatWindow";
 
-const Blog = () => {
+const Chat = () => {
     return (
         <>
             <Header />
-            <p>Blogi sivu!</p>
+            <ChatWindow />
         </>
     );
 };
 
-export default Blog;
+export default Chat;
