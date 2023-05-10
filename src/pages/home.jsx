@@ -51,7 +51,7 @@ const Home = () => {
                 <div className="h-96 w-px bg-happy-yellow self-center " ></div>
                 <div className="flex flex-col justife-center pr-32" style={{ width: "40%" }}>
                     <h2 className="pt-40 text-right font-urbanist text-5xl text-white">
-                        Miehinenkin mies itkee
+                        Tunteet voimavarana
                     </h2>
                     <p className="font-roboto pt-20 text-right text-xl text-white">
                         Suurin osa nuorista miehistä tietää, että tunteiden käsittelyllä on suuri rooli mielenterveyden kannalta. 
@@ -67,14 +67,16 @@ const Home = () => {
                 <div className="flex flex-col justify-center items-center ml-12 w-1/2">
                     <div className="w-3/4">
                         <p className="pt-36 font-urbanist text-5xl text-white">
-                            Otsikko Tähän Näin
+                            Miehinenkin mies itkee
                         </p>
                         <div className="pt-16 text-xl text-white font-roboto">
                             <p className="">
-                            lorem lipum lorem lipsum blaa blaa blaa lorem lipumlorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipumlorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum
+                                On kovinkin tyypillistä että nuorena miehenä olet kasvaessasi ja kehittyessäsi huomaamatta sisäistänyt ajatuksen siitä että tunteet kuuluvat naisille.
+                                Miehiä kasvatetaan jopa lapsille suunnatun viihteen kautta omaksumaan kova ulkokuori. Sotasankareilta itku on hyväksyttävää, vain mikäli esimerkiksi
+                                läheinen menehtyy, muuten turha tunteellisuus on vain heikkous.
                             </p>
                             <p className="pt-12">
-                            lorem lipum lorem lipsum blaa blaa blaa lorem lipumlorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipumlorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum
+                                Tunteellisuus siis mielletään ominaisuutena femininiiniseksi, ja paikoittain negatiiviseksi. Kuitenkin todellisen elämän satuprinssit ja sankarit ovat niitä, jotka kykenevät raivoamatta kertomaan, mikä tänään ärsytti ja miksi.
                             </p>
                         </div>
                     </div>
@@ -94,6 +96,30 @@ const Home = () => {
                         </Link>
                     </button> 
                 </div>
+            </div>
+            <div className="flex justify-between pt-40">
+                <div className="flex flex-col w-1/2  items-center pt-40">
+                    <p className="text-2xl text-white font-josefin pt-56">Me kuuntelemme </p>
+                </div>
+                <div className="flex flex-col justify-center">
+                    <div className="h-96 w-px pt-56 bg-happy-yellow self-center " ></div>
+                    <div className="triangle-arrow self-center"></div>
+                </div>
+                <div className="flex flex-col w-1/2 items-center ">
+                    <div className="w-1/2">
+                        <p className="text-2xl text-white font-josefin pt-8">Palkitse sisäinen pikkuprinssisi ja opi puhumaan tunteista </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div className="flex justify-center pt-32">
+                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 hover:border-violet-300 ">
+                    <Link to="/chat">
+                        <p className=" font-roboto text-zinc-700 lg:text-2xl">
+                            Milloin itkit viimeksi? Miksi?
+                        </p>
+                    </Link>
+                </button>
             </div>
         
         </Layout>

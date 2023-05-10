@@ -26,7 +26,7 @@ code {
     display: block;
     position: absolute;
     left: 25%;
-    top: 45%;
+    top: 44%;
     width: 1px;
     height: 25%;
     background-color: #FCEA2B;
@@ -47,5 +47,16 @@ code {
   .button-cover:hover::after {
     opacity: 1;
   }
+
+  .triangle-arrow {
+
+    width: 20px;
+    height: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #FCEA2B; 
+    display: inline-block
+ }
   
+
   
