@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<div className="bg-candyfloss-purple rounded-b-lg">
+		<div className="nav-bar bg-candyfloss-purple ">
 		  <nav>
-			  <div className="flex justify-evenly p-5">
+			  <div className="flex justify-evenly p-6 relative">
 			    <Link to="/">
-			    <p className="text-dragon-purple text-base lg:text-2xl">Kotisivulle!</p></Link>
+			    <p className="text-white font-josefin  text-base lg:text-3xl hover:text-happy-yellow">Etusivulle!</p></Link>
 			    <Link to="/chat">
-			    <p className="text-dragon-purple text-base lg:text-2xl"></p>Chat</Link>
+			    <p className="text-white font-josefin text-base lg:text-3xl hover:text-happy-yellow">Chat</p></Link>
 			    <Link to="/blog">
-		        <p className="text-dragon-purple text-base lg:text-2xl"></p>Blogi</Link>
+		        <p className="text-white text-base font-josefin lg:text-3xl hover:text-happy-yellow">Blogi</p></Link>
+				
 			  </div>
 		  </nav>
 		</div>
