@@ -59,4 +59,7 @@ code {
  }
   
 
-  
+
+ .tall-box {
+   min-height: 300px; 
+ }

@@ -113,7 +113,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex justify-center pt-32">
-                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
+                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400 border-yellow-300 p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
                     <Link to="/chat">
                         <p className=" font-roboto text-zinc-700 lg:text-2xl">
                             Milloin itkit viimeksi? Miksi?
