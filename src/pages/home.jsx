@@ -24,7 +24,7 @@ const Home = () => {
                     <img className=" flex-shrink-0 " src={Man} alt="man" />
                 </div>
             </div>
-            <button className="animate-bounce absolute bottom-0 right-36 mr-10 mt-10 transform rounded-2xl border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 hover:border-violet-300 ">
+            <button className="animate-bounce absolute bottom-0 right-36 mr-10 mt-10 transform rounded-2xl border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:border-black ">
                 <Link to="/chat">
                     <p className=" font-roboto text-zinc-700 lg:text-2xl">
                         JUTELLAAN HETKI?
@@ -39,7 +39,7 @@ const Home = () => {
                             <div className="text-white font-josefin font-bold text-2xl px-8"> 76% 18-34 vuotiaista miehistä tietää että tunteista puhuminen on hyväksi mielenterveydelle
                             </div>    
                         </div>
-                        <button className=" mt-12 px-16 py-2 ml-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-yellow-200 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400  p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 hover:border-violet-300">
+                        <button className=" mt-12 px-16 py-2 ml-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-yellow-200 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400  p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:border-black ">
                             <Link to="/blog">
                                 <p className="text-base font-roboto text-dragon-purple lg:text-2xl">
                                 LUE LISÄÄ!
@@ -88,7 +88,7 @@ const Home = () => {
                             Silti yli 58% miehistä kokee painetta olla emotionaalisesti vahva
                         </p>
                     </div>
-                    <button className=" mt-12 px-12 py-2 mr-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-yellow-200 bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-500 p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 hover:border-violet-300">
+                    <button className=" mt-12 px-12 py-2 mr-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-yellow-200 bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-500 p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:border-black">
                          <Link to="/blog">
                             <p className="text-base font-roboto text-dragon-purple lg:text-2xl">
                                 LUE LISÄÄ!
@@ -113,7 +113,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex justify-center pt-32">
-                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110  hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 hover:border-violet-300 ">
+                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
                     <Link to="/chat">
                         <p className=" font-roboto text-zinc-700 lg:text-2xl">
                             Milloin itkit viimeksi? Miksi?
