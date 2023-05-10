@@ -17,8 +17,8 @@ const Blog = () => {
         return (
         <Layout>
             <body>
+                
                 <div className="bg-zinc-300">
-
                     <div className=" flex flex-col justify-center items-center">
                         <hr className="custom-line " />
                         <img src={Cover} alt="blog-background" className="" />
@@ -66,10 +66,10 @@ const Blog = () => {
                     </div>
 
                     <div className="flex flex-col mx-64 mb-64"> 
-                    <h1 ref={blogi1} className = "text-6xl w-30 pt-24" >Tunteiden ilmaisu ja ymmärtäminen voimavarana</h1>
-                    <p className = "text-xl w-30 pt-20" >lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum</p>
-                        <h1 ref={blogi2} className = "text-6xl w-30 pt-24" >Kasvaminen miehen ahtaassa muotissa - ikuiset jäljet?</h1>
-                    <p className = "text-xl w-30 pt-20" >lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum</p>
+                    <h1 ref={blogi1} className = "text-5xl w-30 pt-24 font-urbanist" >Tunteiden ilmaisu ja ymmärtäminen voimavarana</h1>
+                    <p className = "text-xl font-roboto w-30 pt-20" >lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum</p>
+                        <h1 ref={blogi2} className = "text-5xl w-30 font-urbanist pt-24" >Kasvaminen miehen ahtaassa muotissa - ikuiset jäljet?</h1>
+                    <p className = "text-xl font-roboto w-30 pt-20" >lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum</p>
                     </div>
                 </div>
             </body>
