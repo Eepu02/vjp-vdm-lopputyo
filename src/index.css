@@ -63,3 +63,13 @@ code {
  .tall-box {
    min-height: 300px; 
  }
+
+ .custom-line {
+    border-top: 8px solid #37184F;
+    width: 100%;
+ }
+
+ .yellow-line {
+    border-top: 4px solid #37184F;
+    width: 40%;
+ }
