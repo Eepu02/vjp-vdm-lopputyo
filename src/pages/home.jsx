@@ -14,8 +14,8 @@ const Home = () => {
                         Tunteet ovat sokeita sukupuolelle
                     </h1>
                     <p className="pt-20 text-3xl">
-                        <p className="">Miehisyyttä ja emotionaalisuutta pidetään herkästi toisiaan poissulkevina 
-                        eikä tuntiesta puhuminen tunnu aina turvalliselta ja sallitulta.
+                        <p className="">Miehisyyttä ja emotionaalisuutta pidetään herkästi toisiaan poissulkevina, 
+                        eikä tunteista puhuminen tunnu aina turvalliselta ja sallitulta.
                         </p>
                         <p className="pt-10">Haluamme tarjota sinulle turvallisen tilan puhua tunteistasi ja mahdollisesti oppia tunnetyöstä enemmän. 
                         Kerro meille miltä sinusta tuntuu, kuten tunteet, mekin olemme sokeita sukupuolelle.
@@ -26,10 +26,10 @@ const Home = () => {
                     <img className=" flex-shrink-0 " src={Man} alt="man" />
                 </div>
             </div>
-            <button className="absolute bottom-0 right-36 mr-10 mt-10 transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow  p-6 p-8 shadow-2xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600">
+            <button className="animate-bounce absolute bottom-0 right-36 mr-10 mt-10 transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow  p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110">
                 <Link to="/chat">
                     <p className="text-base text-dragon-purple lg:text-2xl">
-                        Miltä tuntuu?
+                        Jutellaan hetki?
                     </p>
                 </Link>
             </button>
@@ -41,7 +41,7 @@ const Home = () => {
                             <div className="text-white font-bold text-2xl px-8"> 76% 18-34 vuotiaista miehistä tietää että tunteista puhuminen on hyväksi mielenterveydelle
                             </div>    
                         </div>
-                        <button className=" mt-12 px-16 py-2 ml-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 ">
+                        <button className=" mt-12 px-16 py-2 ml-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110">
                             <Link to="/blog">
                                 <p className="text-base text-dragon-purple lg:text-2xl">
                                 Lue lisää!
@@ -55,7 +55,7 @@ const Home = () => {
                         Miehinenkin mies itkee
                     </h2>
                     <p className="pt-16 text-xl">
-                        Suurin osa nuorista miehistä tietää että tunteiden käsittelyllä on suuri rooli mielenterveyden kannalta. 
+                        Suurin osa nuorista miehistä tietää, että tunteiden käsittelyllä on suuri rooli mielenterveyden kannalta. 
                         Kuitenkin ympäröivä yhteiskunta luo helposti vääristyneen käsityksen siitä, ettei niiden ilmaisu tai niistä puhuminen ole luonnollista miehille.
                         Mikäli et koe että sinulla on turvallista ympäristöä tunteista keskustelemiselle, tunneymmärrys jää herkästi puutteelliseksi.
                         Tällä on merkittävän iso vaikutus mielenterveyteen, yllä mainittu keskustelu kun on jo vuosikymmeniä sitten todettu mielenterveyttä ylläpitäväksi.
@@ -85,7 +85,7 @@ const Home = () => {
                             Silti yli 58% miehistä kokee painetta olla emotionaalisesti vahva
                         </p>
                     </div>
-                    <button className=" mt-12 px-12 py-2 mr-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 ">
+                    <button className=" mt-12 px-12 py-2 mr-52 flex items-center justify-center mt-10 transform rounded-full border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110">
                          <Link to="/blog">
                             <p className="text-base text-dragon-purple lg:text-2xl">
                                 Lue lisää!

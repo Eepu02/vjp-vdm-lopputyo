@@ -17,28 +17,27 @@ const Blog = () => {
         return (
         <Layout>
             <body>
-                <p>Blogi sivu!</p>
-                <div className="m-12 grid grid-cols-3 gap-8 mb-52">
-                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600"
+
+                <div className="flex flex-col lg: m-12 grid grid-cols-3 gap-8 mb-52">
+                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
                          onClick={() => scroll(blogi1)}>
-                        <h1 className="text-3xl">Otsikko</h1>
-                        <p>Tunteiden ilmaisu ja ymmärtäminen voimavarana</p>
+                        <h1 className="text-3xl">Tunteiden ilmaisu ja ymmärtäminen voimavarana</h1>
+                        <p>lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum</p>
                     </div>
-                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600"
+                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
                          onClick={() => scroll(blogi2)}>
-                        <h1 className="text-3xl">Otsikko</h1>
+                        <h1 className="text-3xl">Kasvaminen miehen ahtaassa muotissa - ikuiset jäljet?</h1>
                         <p>
-                            Kasvaminen miehen ahtaassa muotissa - ikuiset
-                            jäljet?
+                        lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum
                         </p>
                     </div>
-                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600">
+                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
                         <h1 className="text-3xl">Otsikko</h1>
-                        <p>teksti3</p>
+                        <p>lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum</p>
                     </div>
-                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600">
+                    <div className="transform rounded-lg border-2 border-dragon-purple bg-blue-600 bg-happy-yellow p-8 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
                         <h1 className="text-3xl">Otsikko</h1>
-                        <p>teksti3</p>
+                        <p>lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum blaa blaa blaa lorem lipum lorem lipsum</p>
                     </div>
                 </div>
 
