@@ -7,7 +7,7 @@ const ChatBubble = ({ content, role }) => {
             : "mr-8 bg-candyfloss-purple rounded-bl-none";
 
     return (
-        <div className={["rounded-xl p-2 my-4", style].join(" ")}>
+        <div className={["my-4 rounded-xl p-2 shadow-md", style].join(" ")}>
             <p>{content}</p>
         </div>
     );
