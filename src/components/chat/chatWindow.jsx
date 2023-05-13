@@ -68,16 +68,8 @@ const ChatWindow = () => {
         setEnteredText("");
     };
 
-    // const [data, setData] = React.useState(null);
-
-    // React.useEffect(() => {
-    //     fetch("/api")
-    //         .then((res) => res.json())
-    //         .then((data) => setData(data.message));
-    // }, []);
-
     return (
-        <div className="relative flex h-[calc(100vh-32px)] w-96 flex-col p-8">
+        <div className="relative m-auto grid h-[calc(100vh-64px)] grid-rows-[1fr_200px] p-8">
             <div ref={container} className="h-full overflow-y-scroll px-4">
                 {messages.map((message, i) => (
                     <ChatBubble
@@ -87,8 +79,13 @@ const ChatWindow = () => {
                     />
                 ))}
             </div>
-            <form onSubmit={addMessage} className="grid-rows grid">
-                <label htmlFor="writemessage">Kirjoita viesti</label>
+            <form
+                onSubmit={addMessage}
+                className="grid h-min grid-cols-[1fr_100px]"
+            >
+                <label className="col-span-2" htmlFor="writemessage">
+                    Kirjoita viesti
+                </label>
                 <input
                     type="text"
                     name="content"
@@ -98,7 +95,7 @@ const ChatWindow = () => {
                     value={enteredText}
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
-                    className="border border-0 bg-candyfloss-purple p-2 focus:outline-none"
+                    className="min-w-0 border border-0 bg-candyfloss-purple p-2 focus:outline-none"
                 />
                 <input
                     type="submit"
