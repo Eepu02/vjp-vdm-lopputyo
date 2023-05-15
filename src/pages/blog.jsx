@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layouts/layout";
 import { useRef } from "react";
-import Cover from "../assets/photos/AdobeStock.jpeg";
+import Cover from "../assets/photos/AdobeStock_50pct.webp";
 import BlogItem from "../components/blog/blogItem";
 import BlogCard from "../components/blog/blogCard";
 

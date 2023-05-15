@@ -46,7 +46,11 @@ const ChatWindow = () => {
     const Scroll = () => {
         const { offsetHeight, scrollHeight, scrollTop } = container.current;
         if (scrollHeight <= scrollTop + offsetHeight + 100) {
-            container.current?.scrollTo(0, scrollHeight);
+            // container.current?.scrollTo(0, scrollHeight);
+            container.current?.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
         }
     };
 
