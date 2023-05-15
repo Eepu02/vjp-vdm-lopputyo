@@ -1,24 +1,49 @@
 # Devaus
 
-Jos aloitat uuden asian työstämisen, valitse Github desktopista `main`-haara ja paina `fetch origin` sekä tarvittaessa `pull origin`. Tällöin muiden tekemät mahdolliset muutokset ladataan sulle.
+## Github
 
-Aluksi avaa VS Coden terminaali Terminal --> New terminal ja suorita `npm run install` asentaakseksi ja päivittääksesi kirjastot. Tämä on hyvä tehdä päivän alussa tai aina jos joku lisää projektiin uuden kirjaston.
+Jos aloitat uuden asian työstämisen, valitse Github desktopista `main`-haara ja paina `Fetch origin` sekä tarvittaessa `Pull origin`. Tällöin muiden tekemät mahdolliset muutokset ladataan sulle. Tee uusi haara `Branch --> New branch` ja paina `Publish branch`.
 
-Käynnistä palvelin komennolla `npm run start`. Muutokset näkyvät tällöin livenä. Jos selain ei aukea automaattisesti, etusivulle pääsee osoitteesta [http://localhost:3000](http://localhost:3000).
+Kun saat asian valmiiksi, lisää yhteenveto ja paina vasemmalta `Commit` ja tämän jälkeen `Push origin`. Paina `Create pull request` jonka jälkeen siirryt Githubin verkkosivuille. Jos konflikteja ei ole ja kaikki näyttää vihreää, voi haaran yhdistää päähaaraan. Tarvittaessa tässä vaiheessa voi myös pyytää toista tsekkaa muutokset, kuten on tapana isoissa projekteissa.
+
+## Koodaus
+
+Aluksi avaa VS Coden terminaali Terminal --> New terminal ja suorita `npm run install` asentaakseksi ja päivittääksesi kirjastot. Tämä on hyvä tehdä päivän alussa tai aina jos joku lisää projektiin uuden kirjaston. Ei muuta kun koodaamaan!
+
+## Muutosten näkeminen
+
+Käynnistä etupään devauspalvelin komennolla `npm run start`. Muutokset näkyvät tällöin livenä. Jos selain ei aukea automaattisesti, etusivulle pääsee osoitteesta [http://localhost:3000](http://localhost:3000).
+
+# Käynnistys ja deployaus
+
+## Lyhyesti
+
+Suorita seuraavat komennot projektin juuressa:
+
+1. `npm install`
+2. `npm run build`
+3. `npm run server`
+
+Projekti on nyt saavutettavissa osoitteessa [https://localhost:9000/](https://localhost:9000/).
+
+### Chatin tekoälyvastausten saaminen
+
+Jos haluat, että chat vastaa tekoälyn avulla, tarvitset OPEN AI:n API-avaimen. Sitä ei voida turvallisuussyistä säilöä projektin yhteydessä. Palvelin kuitenkin vastaa ilman API avainta, joten voit testata chat-ominaisuutta ilman avainta. Tekoälyn vastauksia voi testata tuotantoversiossa [Renderissä](https://tunteetovatkaikille.onrender.com). Jos sinulla on avain, tee seuraavasti:
+
+1. Kopioi `.env.template` tiedosto ja nimeä se `.env`-päätteiseksi.
+2. Lisää OPEN AI:n API-avain.
+3. Aseta `NODE_ENV` arvoksi `production`
+4. Tallenna ja käynnistä palvelin uudelleen.
+
+## Pitkästi
+
+Suorita `npm run build`, jolloin projektin `src`-kansio pakataan ja optimoidaan selaimella avattavaan muotoon. Sivustoa voi tarkastella avaamalla `index.html` `build`-kansiosta. `build`-kansion sisällön voi viedä staattisen sisällön hostauspalveluun. Huomioi, että jotkin sivuston ominaisuudet eivät toimi staattisella sivustolla (chatin vastaukset).
+
+Vaihtoehtoisesti projektin voi ajaa Nodella komennolla `node server/server.js` tai suoraan `npm run server`. Sivusto on tällöin saatavilla osoitteessa [https://localhost:9000/](https://localhost:9000/). Jälkimmäinen käynnistää palvelimen Nodemonin kanssa, jolloin muutokset koodiin tulevat voimaan automaattisesti. Ennen palvelimen ajoa tulee ajaa `npm run build`. `server`-kansiossa on ExpressJS:n päälle rakennettu yksinkertainen palvelin ja API-reitti, joka kykenee tarjoamaan staattisen sisällön `build`-kansiosta.
 
 # TailwindCSS
 
 Projektissa käytetään [TailwindCSS](https://tailwindcss.com/):ää.
-
-# Deploying
-
-Suorita `npm run build`, jolloin projektin `src`-kansio pakataan ja optimoidaan selaimella avattavaan muotoon. Sivustoa voi tarkastella avaamalla `index.html` `build`-kansiosta. `build`-kansion sisällön voi viedä staattisen sisällön hostauspalveluun. Huomioi, että jotkin sivuston ominaisuudet eivät toimi staattisella sivustolla.
-
-Vaihtoehtoisesti projektin voi ajaa Nodella komennolla `node server/server.js`. Ennen tätä tulee ajaa `npm run build`.
-
-# Käynnistys
-
-Suorita projektin juurihakemistossa komennot `npm install` ja `npm run build`. Tämän jälkeen käynnistä palvelin komennolla `npm run dev`.
 
 # Getting Started with Create React App
 
