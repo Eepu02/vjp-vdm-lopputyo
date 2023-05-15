@@ -5,12 +5,13 @@ const ChatWindow = () => {
     // Ideally, the messages would be saved in a database.
     // But we have no need for that and besides, it would
     // increase complexity quite a bit
-    const [messages, setMessages] = useState([]);
-    const [enteredText, setEnteredText] = useState("");
+    const [messages, setMessages] = useState([]); // Store messages
+    const [enteredText, setEnteredText] = useState(""); // Keep track of what's being typed
     const [loading, setLoading] = useState(false); // Disable input during fetching
-    const inputReference = useRef(null);
-    const container = useRef(null);
+    const inputReference = useRef(null); // Store the input field for auto focus
+    const container = useRef(null); // Store the container for scrolling
 
+    // Auto focus onto the input field
     useEffect(() => {
         inputReference.current.focus();
     });
@@ -43,22 +44,24 @@ const ChatWindow = () => {
         if (latestMessage && latestMessage.role === "user") fetchData();
     }, [messages]);
 
+    // Calculates new scroll position and scroll the chat window
     const Scroll = () => {
         const { offsetHeight, scrollHeight, scrollTop } = container.current;
         if (scrollHeight <= scrollTop + offsetHeight + 100) {
-            // container.current?.scrollTo(0, scrollHeight);
             container.current?.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            })
+                top: scrollHeight,
+                behavior: "smooth",
+            });
         }
     };
 
+    // Scroll when new messages are added
     useEffect(() => {
         Scroll();
     }, [messages]);
 
     const addMessage = async (e) => {
+        // Prevent the default action (for a HTML form that'd be a POST request)
         e.preventDefault();
         if (enteredText.length === 0) return;
         setLoading(true);
