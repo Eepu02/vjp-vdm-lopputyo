@@ -16,12 +16,12 @@ const Blog = () => {
 
     return (
         <Layout>
-            <div className="bg-zinc-300">
+            <div className="relative bg-zinc-300">
                 <div className=" flex flex-col items-center justify-center">
                     <hr className="custom-line " />
                     <img src={Cover} alt="blog-background" />
                     <hr className="custom-line my" />
-                    <div className="absolute left-20 top-0 flex h-full w-full flex-col items-center justify-center">
+                    <div className="left-20 top-0 flex h-full w-full flex-col items-center justify-center">
                         <p className=" pd-4 font-josefin text-5xl font-bold text-happy-yellow">
                             Itkevä Mies
                         </p>
