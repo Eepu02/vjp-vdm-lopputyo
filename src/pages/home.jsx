@@ -24,7 +24,7 @@ const Home = () => {
                     <img className="w-full h-auto" src={Man} alt="man" />
                 </div>
             </div>
-            <button className="animate-bounce absolute bottom-0 right-4 lg:right-36 mr-4 mt-4 lg:mt-10 transform rounded-2xl border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400 p-6 lg:p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
+            <button className="animate-bounce absolute bottom-0 right-4 lg:right-36 lg:mr-4 mt-4 lg:mt-10 transform rounded-2xl border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 border-yellow-300 to-yellow-400 p-6 lg:p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
                 <Link to="/chat">
                     <p className=" font-roboto text-zinc-700 lg:text-2xl">
                         JUTELLAAN HETKI?
@@ -64,7 +64,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-between lg:flex-row pt-8 lg:pt-40">
-                <div className="flex flex-col justify-center items-center ml-4 lg:ml-12 w-full lg:w-1/2">
+                <div className="flex flex-col justify-center items-center pl-4 lg:ml-12 w-full lg:w-1/2">
                     <div className="w-3/4">
                         <p className="pt-8 font-urbanist text-4xl lg:text-5xl text-white">
                             Miehinenkin mies itkee
@@ -81,7 +81,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative flex flex-col pt-8 lg:pt-40 w-full lg:w-1/2 ml-4 lg:ml-36">
+                <div className="relative flex flex-col pt-8 lg:pt-40 w-full lg:w-1/2 lg:ml-4 lg:ml-36">
                     <img src={Pilar} alt="pilar-graph" className="w-full h-auto" style={{ width: "65%" }} />
                     <div className="absolute top-4 " style={{ width: "40%" }} >
                         <p className="text-white font-josefin font-bold text-base lg:text-2xl px-4 lg:px-8">
@@ -98,22 +98,22 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex justify-between pt-40">
-                <div className="flex flex-col w-1/2  items-center pt-40">
+                <div className="flex flex-col lg:w-1/2  items-center pt-40">
                     <p className="text-2xl text-white font-josefin pt-56">Me kuuntelemme </p>
                 </div>
                 <div className="flex flex-col justify-center">
                     <div className="h-96 w-px pt-56 bg-happy-yellow self-center " ></div>
                     <div className="triangle-arrow self-center"></div>
                 </div>
-                <div className="flex flex-col w-1/2 items-center ">
-                    <div className="w-1/2">
+                <div className="flex flex-col lg:w-1/2 items-center ">
+                    <div className="lg:w-1/2">
                         <p className="text-2xl text-white font-josefin pt-8">Palkitse sisäinen pikkuprinssisi ja opi puhumaan tunteista </p>
                     </div>
                     
                 </div>
             </div>
             <div className="flex justify-center pt-32">
-                <button className="  bottom-0   transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400 border-yellow-300 p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
+                <button className="bottom-0 transform rounded-full border-2 border-dragon-purple shadow bg-blue-600 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400 border-yellow-300 p-6 p-8 shadow-2xl transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
                     <Link to="/chat">
                         <p className=" font-roboto text-zinc-700 lg:text-2xl">
                             Milloin itkit viimeksi? Miksi?
