@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Chat from "./pages/chat";
 import Blog from "./pages/blog";
+import About from "./pages/about";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
                 <Route index element={<Home />} />
                 <Route path="chat" element={<Chat />} />
                 <Route path="blog" element={<Blog />} />
+                <Route path="about" element={<About />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

@@ -56,6 +56,9 @@ const Footer = () => {
                     <li className="font-josefin hover:text-happy-yellow">
                         <Link to="/blog">Blogi</Link>
                     </li>
+                    <li className="font-josefin hover:text-happy-yellow">
+                        <Link to="/about">Meistä</Link>
+                    </li>
                 </ul>
             </nav>
         </footer>
