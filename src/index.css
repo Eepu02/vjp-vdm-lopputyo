@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@400;700&family=Michroma&family=Roboto&family=Urbanist:wght@400;700&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -17,23 +18,23 @@ body {
 }
 
 code {
-    font-family: Josefin Sans, Roboto, Michroma, Urbanist, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+    font-family: Josefin Sans, Roboto, Michroma, Urbanist, source-code-pro,
+        Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .vertical-line::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 25%;
     top: 44%;
     width: 1px;
     height: 25%;
-    background-color: #FCEA2B;
-  }
-  
-  .button-cover::after {
-    content: '';
+    background-color: #fcea2b;
+}
+
+.button-cover::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -42,34 +43,31 @@ code {
     background-color: rgba(255, 255, 255, 0.2);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .button-cover:hover::after {
+}
+
+.button-cover:hover::after {
     opacity: 1;
-  }
+}
 
-  .triangle-arrow {
-
+.triangle-arrow {
     width: 20px;
     height: 20px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 20px solid #FCEA2B; 
-    display: inline-block
- }
-  
+    border-top: 20px solid #fcea2b;
+    display: inline-block;
+}
 
+.tall-box {
+    min-height: 300px;
+}
 
- .tall-box {
-   min-height: 300px; 
- }
-
- .custom-line {
-    border-top: 8px solid #37184F;
+.custom-line {
+    border-top: 8px solid #37184f;
     width: 100%;
- }
+}
 
- .yellow-line {
-    border-top: 4px solid #37184F;
+.yellow-line {
+    border-top: 4px solid #37184f;
     width: 40%;
- }
+}

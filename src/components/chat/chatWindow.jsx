@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ChatBubble from "./chatBubble";
 
-const ChatWindow = () => {
+const ChatWindow = ({ handlePin }) => {
     // Ideally, the messages would be saved in a database.
     // But we have no need for that and besides, it would
     // increase complexity quite a bit
@@ -16,6 +16,7 @@ const ChatWindow = () => {
         inputReference.current.focus();
     });
 
+    // Handles responses to user messages
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -34,6 +35,7 @@ const ChatWindow = () => {
             } catch (e) {
                 console.log(e);
             } finally {
+                // Using finally so the input is unfreezed even if there's an error
                 setLoading(false);
             }
         };
@@ -76,13 +78,14 @@ const ChatWindow = () => {
     };
 
     return (
-        <div className="relative m-auto grid h-[calc(100vh-64px)] grid-rows-[1fr_200px] p-8">
+        <div className="relative grid h-screen grid-rows-[1fr_200px] p-8">
             <div ref={container} className="h-full overflow-y-scroll px-4">
                 {messages.map((message, i) => (
                     <ChatBubble
                         key={i}
                         role={message.role}
                         content={message.content}
+                        pinMessage={handlePin}
                     />
                 ))}
             </div>
@@ -99,10 +102,12 @@ const ChatWindow = () => {
                     id="writemessage"
                     disabled={loading}
                     autoFocus
-                    value={enteredText}
+                    value={
+                        loading ? "Odota, muodostan vastausta..." : enteredText
+                    }
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
-                    className="min-w-0 border border-0 bg-candyfloss-purple p-2 focus:outline-none"
+                    className="min-w-0 bg-candyfloss-purple p-2 focus:border-2 focus:outline-none disabled:text-dragon-purple"
                 />
                 <input
                     type="submit"

@@ -44,6 +44,24 @@ const Footer = () => {
                         Tiktok icons created by Freepik - Flaticon
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="https://www.flaticon.com/free-icons/pin"
+                        title="pin icons"
+                        className="hover:text-happy-yellow"
+                    >
+                        Pin icons created by twentyfour - Flaticon
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.flaticon.com/free-icons/close"
+                        title="close icons"
+                        className="hover:text-happy-yellow"
+                    >
+                        Close icons created by joalfa - Flaticon
+                    </a>
+                </li>
             </ul>
             <nav className="px-8">
                 <ul className="flex flex-col justify-evenly text-center">
