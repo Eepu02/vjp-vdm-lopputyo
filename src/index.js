@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Chat from "./pages/chat";
 import Blog from "./pages/blog";
 import About from "./pages/about";
+import Test from "./pages/test";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
                 <Route path="chat" element={<Chat />} />
                 <Route path="blog" element={<Blog />} />
                 <Route path="about" element={<About />} />
+                <Route path="test" element={<Test />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
