@@ -78,7 +78,7 @@ const ChatWindow = ({ handlePin }) => {
     };
 
     return (
-        <div className="relative grid h-screen grid-rows-[1fr_200px] p-8">
+        <div className="relative m-8 grid h-screen grid-rows-[1fr_200px]">
             <div ref={container} className="h-full overflow-y-scroll px-4">
                 {messages.map((message, i) => (
                     <ChatBubble
@@ -107,13 +107,13 @@ const ChatWindow = ({ handlePin }) => {
                     }
                     onChange={(e) => setEnteredText(e.target.value)}
                     ref={inputReference}
-                    className="min-w-0 bg-candyfloss-purple p-2 focus:border-2 focus:outline-none disabled:text-dragon-purple"
+                    className="min-w-0 border-2 border-dragon-purple bg-candyfloss-purple p-2 focus:outline-none disabled:text-dragon-purple"
                 />
                 <input
                     type="submit"
                     value="Lähetä"
                     disabled={loading}
-                    className="bg-dragon-purple text-white"
+                    className="text-white- bg-dragon-purple"
                 />
             </form>
         </div>

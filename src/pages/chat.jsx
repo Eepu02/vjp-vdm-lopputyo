@@ -15,7 +15,25 @@ const Chat = () => {
     const [pinnedMessages, setPinnedMessages] = useState([
         {
             identifier: crypto.randomUUID(),
-            message: "Voit kiinnittää parhaita viestejä tähän!",
+            message: (
+                <p>
+                    Kiva että tulit juttelemaan! Täällä pääset juttelemaan
+                    tekoälyn kanssa. Voit puhuu mistä tahansa, emme tallenna
+                    keskustelujasi. Oothan meihin yhteydessä, jos tarviit tukea!
+                    Voit halutessasi tutustua ulkoisen palveluntarjoajan{" "}
+                    <Link
+                        className="underline"
+                        to="https://openai.com/policies/api-data-usage-policies"
+                    >
+                        tietosuojaselosteeseen
+                    </Link>
+                    .
+                </p>
+            ),
+        },
+        {
+            identifier: crypto.randomUUID(),
+            message: <p>Voit kiinnittää parhaita viestejä tähän!</p>,
         },
     ]);
 
@@ -29,37 +47,23 @@ const Chat = () => {
         <Layout>
             <div className="grid grid-rows-[100vh_1fr] lg:grid-cols-[80ch_1fr] lg:grid-rows-none">
                 <ChatWindow handlePin={handlePin} />
-                <div className="my-4 mr-4 h-full">
-                    <p>
-                        Kiva että tulit juttelemaan! Täällä pääset juttelemaan
-                        tekoälyn kanssa. Voit puhuu mistä tahansa, emme tallenna
-                        keskustelujasi. Oothan meihin yhteydessä, jos tarviit
-                        tukea! Voit halutessasi tutustua ulkoisen
-                        palveluntarjoajan{" "}
-                        <Link
-                            className="underline"
-                            to="https://openai.com/policies/api-data-usage-policies"
-                        >
-                            tietosuojaselosteeseen
-                        </Link>
-                        .
-                    </p>
-                    <div className="mx-auto my-4 grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
-                        {pinnedMessages.map((message) => {
-                            return (
-                                <Note
-                                    key={message.identifier}
-                                    identifier={message.identifier}
-                                    handleClose={handleNoteUnpin}
-                                >
-                                    <p className="font-indieflower text-dragon-purple">
-                                        {message.message}
-                                    </p>
-                                </Note>
-                            );
-                        })}
-                    </div>
+                {/* <div className="my-4 mr-4 h-full"> */}
+                <div className="my-8 grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
+                    {pinnedMessages.map((message) => {
+                        return (
+                            <Note
+                                key={message.identifier}
+                                identifier={message.identifier}
+                                handleClose={handleNoteUnpin}
+                            >
+                                <p className="font-indieflower text-dragon-purple">
+                                    {message.message}
+                                </p>
+                            </Note>
+                        );
+                    })}
                 </div>
+                {/* </div> */}
             </div>
         </Layout>
     );

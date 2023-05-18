@@ -21,9 +21,10 @@ const ChatBubble = ({ content, role, pinMessage }) => {
             )}
         >
             <button
-                className={["absolute -top-2 rounded-full p-2", buttonPos].join(
-                    " "
-                )}
+                className={[
+                    "absolute -top-2 rounded-full p-2 transition-transform hover:scale-110",
+                    buttonPos,
+                ].join(" ")}
                 onClick={() => pinMessage(content)}
             >
                 <img
