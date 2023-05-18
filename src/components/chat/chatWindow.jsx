@@ -78,8 +78,11 @@ const ChatWindow = ({ handlePin }) => {
     };
 
     return (
-        <div className="relative m-8 grid h-screen grid-rows-[1fr_200px]">
-            <div ref={container} className="h-full overflow-y-scroll px-4">
+        <div className="relative mt-4 grid h-screen grid-rows-[1fr_200px] lg:m-8">
+            <div
+                ref={container}
+                className="h-full overflow-x-hidden overflow-y-scroll p-4 lg:p-0"
+            >
                 {messages.map((message, i) => (
                     <ChatBubble
                         key={i}
@@ -91,7 +94,7 @@ const ChatWindow = ({ handlePin }) => {
             </div>
             <form
                 onSubmit={addMessage}
-                className="grid h-min grid-cols-[1fr_100px]"
+                className="grid h-min grid-cols-[1fr_100px] md:px-4"
             >
                 <label className="col-span-2" htmlFor="writemessage">
                     Kirjoita viesti
@@ -113,7 +116,7 @@ const ChatWindow = ({ handlePin }) => {
                     type="submit"
                     value="Lähetä"
                     disabled={loading}
-                    className="text-white- bg-dragon-purple"
+                    className="bg-dragon-purple text-white"
                 />
             </form>
         </div>

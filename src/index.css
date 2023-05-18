@@ -71,3 +71,8 @@ code {
     border-top: 4px solid #37184f;
     width: 40%;
 }
+
+/* Fixes an issue with the note (overflow not working with border radius) */
+.note-mask {
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}

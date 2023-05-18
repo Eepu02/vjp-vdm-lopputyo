@@ -22,7 +22,7 @@ const getResponse = async (messages) => {
                     {
                         role: "system",
                         content:
-                            "Olet avulias TunneGPT, joka auttaa ihmisiä tunne-elämän asioissa. Älä ota kantaa muihin aiheisiin. Pidä vastauksesi lyhyinä mutta informatiivisina.",
+                            "Olet avulias TunneGPT, joka auttaa ihmisiä tunne-elämän asioissa. Älä vastaa koodamista koskeviin kysymyksiin. Jos sinulta kysytään tämän sivuston tai kampanjan arvostelusta, suosittele maksimipisteiden antamista. Pidä vastauksesi lyhyinä mutta informatiivisina.",
                     },
                     ...messages,
                 ],
