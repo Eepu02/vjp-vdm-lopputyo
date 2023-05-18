@@ -13,7 +13,11 @@ module.exports = {
                 michroma: ["Michroma", "sans-serif"],
                 urbanist: ["Urbanist", "sans-serif"],
                 roboto: ["Roboto", "sans-serif"],
-                josefin: ["Josefin Sans", "sans-serif"],
+                josefin: ["'Josefin Sans'", "sans-serif"],
+                indieflower: ["'Indie Flower'", "sans-serif"],
+            },
+            boxShadow: {
+                note: "inset 0 -40px 40px rgba(0,0,0,0.2), inset 0 25px 10px rgba(0,0,0,0.2), 0 5px 6px 5px rgba(0,0,0,0.2);",
             },
         },
     },

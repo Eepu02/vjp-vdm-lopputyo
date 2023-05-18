@@ -10,7 +10,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const getResponse = async (messages) => {
-    // Some limitations so we don't go bankrupt during development
+    // Some limitations so we don't go bankrupt during development (although it's still cheap, we're students)
     if (
         process.env.NODE_ENV === "production" &&
         process.env.OPENAI_API_KEY !== undefined
@@ -22,7 +22,7 @@ const getResponse = async (messages) => {
                     {
                         role: "system",
                         content:
-                            "Olet avulias TunneGPT, joka auttaa ihmisiä tunne-elämän asioissa. Jos keskustelu koskee jotain muuta aihealuetta, vastaa 'Minulla ei ole tietoa tästä.'.",
+                            "Olet avulias TunneGPT, joka auttaa ihmisiä tunne-elämän asioissa. Älä ota kantaa muihin aiheisiin. Pidä vastauksesi lyhyinä mutta informatiivisina.",
                     },
                     ...messages,
                 ],
@@ -50,14 +50,6 @@ const getResponse = async (messages) => {
                 });
             }, 1000);
         });
-        // return {
-        //     status: "ok",
-        //     message: {
-        //         role: "assistant",
-        //         content:
-        //             "Hello from Server! Please set NODE_ENV to production and/or provide an API key!",
-        //     },
-        // };
     }
 };
 
