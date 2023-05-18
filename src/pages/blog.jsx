@@ -43,7 +43,7 @@ const Blog = () => {
                     <hr className="yellow-line my-12" />
                 </div>
 
-                <div className="flex flex-row m-6 space-y-6 lg:space-y-0 flex flex-col lg:m-12 lg:mb-52 lg:grid grid-cols-3 lg:gap-8">
+                <div className="flex flex-row m-6 space-y-6 lg:space-y-0 lg:m-12 lg:mb-52 lg:grid grid-cols-3 lg:gap-8">
                     <BlogCard
                         heading="Tunteiden ilmaisu ja ymmärtäminen voimavarana"
                         clickHandler={() => scroll(blogi1)}
