@@ -12,7 +12,7 @@ const Note = ({ children, autoHeight = false, handleClose, identifier }) => {
     return (
         <div
             className={[
-                "relative mx-auto w-60 overflow-x-hidden rounded-[0_0_0_30px/45px] bg-yellow-200 shadow-note",
+                "note-mask relative mx-auto w-60 overflow-x-hidden rounded-[0_0_0_30px/45px] bg-yellow-200 shadow-note",
                 beforeStyle,
                 height,
             ].join(" ")}
