@@ -8,11 +8,11 @@ with common components, such as a header and a footer.
 The page content is inside the main tags as that is
 the content that will differ from page to page.
 */
-const Layout = ({ children }) => {
+const Layout = ({ children, className }) => {
     return (
         <>
             <Header />
-            <main>{children}</main>
+            <main className={className}>{children}</main>
             <Footer />
         </>
     );
