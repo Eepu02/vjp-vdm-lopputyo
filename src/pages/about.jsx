@@ -13,7 +13,7 @@ const About = () => {
     return (
         <Layout>
             <div className="">
-                <div className=" flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:m-8 mt-8 ml-16 mr-16 text-white lg:m-16 ">
+                <div className=" flex flex-col justify-center items-center lg:grid lg:grid-cols-2 lg:m-8 mt-8 ml-8 mr-8 text-white lg:m-16 ">
                     <BlogItem
                         heading="Kaikki saavat näyttää tunteensa"
                         text={

@@ -11,10 +11,10 @@ const Home = () => {
         <Layout>
             <div className="flex flex-col justify-between md:flex-row lg:flex-row ">
                 <div className="flex-col pl-16 lg:pl-24 w-full lg:w-1/2 md:w-1/2 md:pl-16 md:h-full">
-                    <h1 className="pt-12 pl-4 lg:pt-24 md:pt-24 lg:pl-10 font-urbanist text-4xl lg:text-6xl text-white vertical-line">
+                    <h1 className="pt-12 pl-4 pr-4 lg:pt-24 md:pt-24 lg:pl-10 font-urbanist text-4xl lg:text-6xl text-white vertical-line">
                         Tunteet ovat sokeita sukupuolelle
                     </h1>
-                    <p className="pt-8 md:pt-16 pl-4 lg:pt-60 lg:pl-12 font-roboto text-base lg:text-lg text-white pr-8 ">
+                    <p className="pt-8 md:pt-16 pl-4 pr-4 lg:pt-60 lg:pl-12 font-roboto text-base lg:text-lg text-white pr-8 ">
                         <p className="">Miehisyyttä ja emotionaalisuutta pidetään herkästi toisiaan poissulkevina, 
                         eikä tunteista puhuminen tunnu aina turvalliselta ja sallitulta. Haluamme tarjota sinulle turvallisen tilan puhua tunteistasi ja mahdollisesti oppia tunnetyöstä enemmän. 
                         Kerro meille miltä sinusta tuntuu, kuten tunteet, mekin olemme sokeita sukupuolelle.
