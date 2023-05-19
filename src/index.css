@@ -17,6 +17,10 @@ body {
     background-color: #7e6e8a;
 }
 
+* {
+    border: 1px solid red !important;
+}
+
 code {
     font-family: Josefin Sans, Roboto, Michroma, Urbanist, source-code-pro,
         Menlo, Monaco, Consolas, "Courier New", monospace;
