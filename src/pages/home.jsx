@@ -37,7 +37,7 @@ const Home = () => {
                     <div className="pt-16 md:pt-44 lg:pt-36">
                         <img src={Pie} alt="pie-chart" className=" h-auto transform scale-x-[-1] " />
                         <div className="absolute top-16 md:top-28 right-4 md:right-4 lg:right-16 "style={{ width: "40%" }} >
-                            <div className="text-black lg:text-black font-josefin font-bold text-xs md:tet-base lg:text-2xl px-4 md:px-2 lg:px-8"> 76% 18-34 vuotiaista miehistä tietää että tunteista puhuminen on hyväksi mielenterveydelle
+                            <div className="text-black lg:text-black font-josefin font-bold text-xs md:text-base lg:text-2xl px-4 md:px-2 lg:px-8"> 76% 18-34 vuotiaista miehistä tietää että tunteista puhuminen on hyväksi mielenterveydelle
                         </div>    
                         </div>
                         <button className="mt-8 lg:mt-12 px-16  lg:px-16 py-2 ml-20 lg:ml-52 flex items-center justify-center mt-4 lg:mt-10 transform rounded-full border-2 border-yellow-200 bg-gradient-to-r from-happy-yellow via-yellow-300 to-yellow-400 p-4 lg:p-8 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-black">
@@ -85,7 +85,7 @@ const Home = () => {
                 <div className="relative flex flex-col items-center  pt-20 lg:pt-40 w-full lg:w-1/2 lg:ml-4 lg:ml-36">
                     <img src={Pilar} alt="pilar-graph" className="w-full h-auto" style={{ width: "65%" }} />
                     <div className="absolute lg:top-20 md:top-28 top-20 lg:top-4 left-20 md:left-32 " style={{ width: "40%" }} >
-                        <p className=" font-josefin font-bold  text-xs md:text-base text-black  lg:text-2xl md:text-xl px-4 md:px-8 lg:px-8">
+                        <p className=" font-josefin font-bold text-xs md:text-base  text-black  lg:text-2xl md:text-xl px-4 md:px-8 lg:px-8">
                             Silti yli 58% miehistä kokee painetta olla emotionaalisesti vahva
                         </p>
                     </div>
