@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="flex flex-col flex-wrap items-center justify-around gap-16 bg-candyfloss-purple py-4 text-dragon-purple lg:flex-row">
-            <p className="px-8 lg:text-xl">#tunteetovatkaikille</p>
+            <p className="px-8 lg:text-xl">#MinäkinItken</p>
             <div className="px-8">
                 <p className="pb-2 text-center">Seuraa meitä!</p>
                 <div className="flex flex-row justify-center gap-4">
@@ -93,7 +93,7 @@ const Footer = () => {
             <nav className="px-8">
                 <ul className="flex flex-col justify-evenly text-center">
                     <li className="font-josefin hover:text-happy-yellow">
-                        <Link to="/">Etusivulle!</Link>
+                        <Link to="/">Etusivulle</Link>
                     </li>
                     <li className="font-josefin hover:text-happy-yellow">
                         <Link to="/chat">Chat</Link>
