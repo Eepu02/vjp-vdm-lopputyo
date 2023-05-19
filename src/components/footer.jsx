@@ -62,6 +62,33 @@ const Footer = () => {
                         Close icons created by joalfa - Flaticon
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="https://golden-course.com/kursus-bahasa-inggris-online/unemployed-sad-man-m-lift/"
+                        title="cover-photo"
+                        className="hover:text-happy-yellow"
+                    >
+                        Cover photo by Golden Course
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://stock.adobe.com/fi/images/unhappy-man-sitting-on-chair-and-watching-distant-sea-missing-someone-concept-black-white-photography-large-copy-space-for-ad-or-advertising-text-high-resolution-photo-for-display-print-banner/583904464"
+                        title="Blog photo"
+                        className="hover:text-happy-yellow"
+                    >
+                        blog-photo by Akin Ozcan 
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.facebook.com/photo/?fbid=515507837279443&set=a.476089914554569"
+                        title="Miehet-ry Logo"
+                        className="hover:text-happy-yellow"
+                    >
+                        Logo by Miehet RY 
+                    </a>
+                </li>
             </ul>
             <nav className="px-8">
                 <ul className="flex flex-col justify-evenly text-center">
