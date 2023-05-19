@@ -8,7 +8,7 @@ import Video from "../components/home/video";
 
 const Home = () => {
     return (
-        <Layout>
+        <Layout className="overflow-x-hidden" >
             <div className="flex flex-col justify-between md:flex-row lg:flex-row ">
                 <div className="flex-col pl-16 lg:pl-24 w-full lg:w-1/2 md:w-1/2 md:pl-16 md:h-full">
                     <h1 className="pt-12 pl-4 pr-4 lg:pt-24 md:pt-24 lg:pl-10 font-urbanist text-4xl lg:text-6xl text-white vertical-line">
