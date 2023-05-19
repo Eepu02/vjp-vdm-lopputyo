@@ -44,21 +44,25 @@ const Blog = () => {
                 <div className="m-6 flex grid-cols-3 flex-col space-y-6 lg:m-12 lg:mb-52 lg:grid lg:flex-row lg:gap-8 lg:space-y-0">
                     <BlogCard
                         heading="Tunteiden ilmaisu ja ymmärtäminen voimavarana"
+                        color="#7c8a6e"
                         clickHandler={() => scroll(blogi1)}
                     />
                     <BlogCard
                         heading="Kasvaminen miehen ahtaassa muotissa - ikuiset jäljet?"
+                        color="#61554d"
                         clickHandler={() => scroll(blogi2)}
                     />
                     <BlogCard
                         heading="Ole oman elämäsi pikkuprinssi"
+                        color="#544d61"
                         clickHandler={() => scroll(blogi3)}
                     />
                 </div>
 
-                <div className="mx-12 mb-12 flex flex-col lg:mx-64 lg:mb-64">
+                <div className="mx-12 mb-12 mt-16 flex flex-col lg:mx-64 lg:mb-64 ">
                     <BlogItem
                         element={blogi1}
+                        color="bg-army-green"
                         heading="Tunteiden ilmaisu ja ymmärtäminen voimavarana"
                         text={
                             <div className="space-y-6">
@@ -128,6 +132,7 @@ const Blog = () => {
                     />
                     <BlogItem
                         element={blogi2}
+                        color="bg-wood"
                         heading="Kasvaminen miehen ahtaassa muotissa - ikuiset jäljet?"
                         text={
                             <div className="space-y-6">
@@ -203,6 +208,7 @@ const Blog = () => {
                     />
                     <BlogItem
                         element={blogi3}
+                        color="bg-blog"
                         heading="Ole oman elämäsi pikkuprinssi"
                         text={
                             <div className="space-y-6">

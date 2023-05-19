@@ -8,7 +8,11 @@ module.exports = {
                 "happy-yellow": "#FCEA2B",
                 "dragon-purple": "#37184F",
                 "candyfloss-purple": "#9E92A7",
+                "army-green": "#7C8A6E",
+                "wood": "#61554d",
+                "blog": "#544d61",
             },
+            
             fontFamily: {
                 michroma: ["Michroma", "sans-serif"],
                 urbanist: ["Urbanist", "sans-serif"],
