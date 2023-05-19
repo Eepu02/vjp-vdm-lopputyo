@@ -40,6 +40,23 @@ code {
     width: 1px;
     height: 25%;
     background-color: #fcea2b;
+
+}
+
+@media (max-width: 600px) {
+    .vertical-line::after {
+        left: 15%;
+        top: 60%;
+        height: 20%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 601px){
+    .vertical-line::after {
+        left: 50%;
+        top: 30%;
+        height: 30%;
+    }
 }
 
 .button-cover::after {
