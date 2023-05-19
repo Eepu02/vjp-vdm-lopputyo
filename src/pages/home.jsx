@@ -99,14 +99,14 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex justify-between pt-20  ">
-                <div className="flex flex-col w-1/2 items-center pl-4 pr-4">
+                <div className="flex flex-col w-1/2 items-center pl-4 ">
                     <p className="text-2xl lg:text-4xl text-white font-josefin pt-56">Me kuuntelemme </p>
                 </div>
                 <div className="flex flex-col justify-center">
                     <div className="h-96 w-px pt-56 bg-happy-yellow self-center " ></div>
                     <div className="triangle-arrow self-center"></div>
                 </div>
-                <div className="flex flex-col w-1/2 pl-8 pr-8 items-center ">
+                <div className="flex flex-col w-1/2 pl-4 pr-4 items-center ">
                     <div className="flex lg:w-1/2  ">
                         <p className="text-2xl lg:text text-white font-josefin pt-8">Palkitse sisäinen pikkuprinssisi ja opi puhumaan tunteista </p>
                     </div>
