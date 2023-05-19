@@ -29,7 +29,7 @@ const About = () => {
                     }
                 />
                 <div>
-                    <img src={Man} alt="man" />
+                    
                 </div>
             </div>
 

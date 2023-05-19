@@ -45,7 +45,7 @@ const Chat = () => {
     };
     return (
         <Layout>
-            <div className="grid grid-rows-[100vh_1fr] lg:grid-cols-[80ch_1fr] lg:grid-rows-none">
+            <div className="grid grid-rows-[100vh_1fr] ml-8 mr-8 lg:grid-cols-[80ch_1fr] lg:grid-rows-none">
                 <ChatWindow handlePin={handlePin} />
                 {/* <div className="my-4 mr-4 h-full"> */}
                 <div className="my-8 grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
